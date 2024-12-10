@@ -25,9 +25,9 @@ function ExpenseCategoryItem({ expense }) {
               className="w-[25px] h-[25px] rounded-full"
               style={{ backgroundColor: expense.color }}
             />
-            <h4 className="capitalize">{expense.title}</h4>
+            <h4 className="capitalize text-white">{expense.title}</h4>
           </div>
-          <p>{currencyFormatter(expense.total)}</p>
+          <p className="text-white">{currencyFormatter(expense.total)}</p>
         </div>
       </button>
     </>

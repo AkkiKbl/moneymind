@@ -24,7 +24,7 @@ function Nav() {
             </div>
 
             {/* name */}
-            <small>Hi, {user.displayName}!</small>
+            <small className="text-black">Hi, {user.displayName}!</small>
           </div>
         )}
 
@@ -32,9 +32,11 @@ function Nav() {
         {user && !loading && (
           <nav className="flex items-center gap-4">
             <div>
-              <p>
-                <ImStatsBars className="text-2xl" />
-              </p>
+              <a href="#stats">
+                <p>
+                  <ImStatsBars style={{ fill: "black" }} className="text-2xl" />
+                </p>
+              </a>
             </div>
             <div>
               <button onClick={logout} className="btn btn-danger">
